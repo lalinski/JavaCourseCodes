@@ -26,6 +26,7 @@ public class HttpInboundHandler extends ChannelInboundHandlerAdapter {
     
     @Override
     public void channelReadComplete(ChannelHandlerContext ctx) {
+        ctx.write("hello,nio3");
         ctx.flush();
     }
 
